@@ -3,7 +3,7 @@
 
 #include <soda.h>               // Include Soda class header (makes class declaration visible).
 #include <vendingmachine.h>     // Include VendingMachine clase header (makes class declaration visible).
-
+#include <ownersname.h>         //include ownersName class header
 
 // This is a C++ style comment. Compiler will ignore all comments.
 
@@ -13,7 +13,12 @@ int main()
 {
     // Print a message at startup.
 
-    std::cout << "Vending machine has been started" << std::endl;
+    std::cout << "Vending machine has been started" << std::endl << std::endl;
+
+    //print owners name
+    OwnersName ownersName("Kjell");
+
+
 
     // Create vendingMachine object. Constructor will be called with no parameters.
     VendingMachine vendingMachine;
