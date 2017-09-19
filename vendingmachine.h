@@ -26,6 +26,8 @@ public:
     // Member function. Returns nothing and takes no parameters.
     void printInventory();
 
+    void printMenu();
+
 
 private:
 

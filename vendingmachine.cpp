@@ -5,6 +5,7 @@
 // Definition of VendingMachine constructor.
 VendingMachine::VendingMachine()
     : sodaTypes_()  // Initialization of sodaTypes_ vector. Explicit call to the constructor.
+
 {
     std::cout << "Vending machine object constructed!" << std::endl;
 }
@@ -21,6 +22,7 @@ VendingMachine::~VendingMachine()
 void VendingMachine::addType(Soda s)
 {
     sodaTypes_.push_back(s);
+
 }
 
 
@@ -29,3 +31,14 @@ void VendingMachine::printInventory()
 {
     std::cout << "Number of soda types registered: " << sodaTypes_.size() << std::endl;
 }
+
+
+
+void VendingMachine::printMenu()
+{
+
+
+
+}
+
+

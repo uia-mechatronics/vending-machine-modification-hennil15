@@ -32,6 +32,8 @@ int main()
     Soda redbull("Red Bull", 42, 10);
     // We have a variable named cola with Soda as its data type.
 
+
+
     // Call the VendingMachine addType function with cola variable as parameter.
     vendingMachine.addType(cola);
     vendingMachine.addType(solo);
@@ -39,6 +41,7 @@ int main()
     // Print inventory using public printInventory member function (method).
     vendingMachine.printInventory();
 
+    vendingMachine.printMenu();
 
 
     // Print a message just before exiting.
