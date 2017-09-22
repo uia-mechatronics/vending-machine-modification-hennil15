@@ -29,14 +29,20 @@ void VendingMachine::addType(Soda s)
 // Print number of registered sodaTypes (types we added to the sodaTypes_ vector).
 void VendingMachine::printInventory()
 {
-    std::cout << "Number of soda types registered: " << sodaTypes_.size() << std::endl;
+    std::cout << "Number of soda types registered: " << sodaTypes_.size() << std::endl << std::endl;
 }
 
 
 
 void VendingMachine::printMenu()
 {
-
+    std::cout << "-----------------------------------------------" << std::endl;
+    std::cout << "Dagens meny er:" << std::endl << std::endl;
+    for (int i = 0; i<sodaTypes_.size(); ++i)
+    {
+        std::cout << sodaTypes_.at(i).name_ << std::endl;
+    }
+    std::cout << "-----------------------------------------------" << std::endl << std::endl;
 
 
 }

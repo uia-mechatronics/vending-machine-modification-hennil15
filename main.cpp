@@ -16,8 +16,7 @@ int main()
     std::cout << "Vending machine has been started" << std::endl << std::endl;
 
     //print owners name
-    OwnersName ownersName("Kjell");
-
+    OwnersName ownersName("Henning");
 
 
     // Create vendingMachine object. Constructor will be called with no parameters.
@@ -27,26 +26,27 @@ int main()
 
 
     // Create a cola object. Constructor will be called with given parameters.
-    Soda cola("Colabrus", 34, 4);
-    Soda solo("solobrus", 30, 6);
+    Soda cola("Cola", 34, 4);
+    Soda solo("Solo", 30, 6);
     Soda redbull("Red Bull", 42, 10);
     // We have a variable named cola with Soda as its data type.
-
 
 
     // Call the VendingMachine addType function with cola variable as parameter.
     vendingMachine.addType(cola);
     vendingMachine.addType(solo);
     vendingMachine.addType(redbull);
+
     // Print inventory using public printInventory member function (method).
     vendingMachine.printInventory();
 
+    //print menu
     vendingMachine.printMenu();
 
 
     // Print a message just before exiting.
     std::cout << "* * *" << std::endl;
-    std::cout << "Vending machine shutting down ... BYE!" << std::endl << std::endl;
+    std::cout << "Vending machine shutting down." << std::endl << std::endl;
 
 
     // Signal "no error occured" to the world outside our small application.
