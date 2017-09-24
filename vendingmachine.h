@@ -28,6 +28,10 @@ public:
 
     void printMenu();
 
+    bool payment(int a);
+
+    int brusvalg();
+
 
 private:
 

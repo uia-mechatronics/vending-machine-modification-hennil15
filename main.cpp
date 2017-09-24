@@ -26,9 +26,9 @@ int main()
 
 
     // Create a cola object. Constructor will be called with given parameters.
-    Soda cola("Cola", 34, 4);
-    Soda solo("Solo", 30, 6);
-    Soda redbull("Red Bull", 42, 10);
+    Soda cola("Knapp 0: Cola", 34, 4);
+    Soda solo("Knapp 1: Solo", 30, 6);
+    Soda redbull("Knapp 2: Red Bull", 42, 10);
     // We have a variable named cola with Soda as its data type.
 
 
@@ -42,6 +42,9 @@ int main()
 
     //print menu
     vendingMachine.printMenu();
+    int valgtBrus = vendingMachine.brusvalg();
+
+    vendingMachine.payment(valgtBrus);
 
 
     // Print a message just before exiting.
